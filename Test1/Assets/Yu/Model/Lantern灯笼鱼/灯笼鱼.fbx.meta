@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: a39253f0694cfe64fb385cf371b3274b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: joint1
+    100004: joint10
+    100006: joint11
+    100008: joint12
+    100010: joint12_end
+    100012: joint12_end_end
+    100014: joint13
+    100016: joint14
+    100018: joint15
+    100020: joint16
+    100022: joint16_end
+    100024: joint16_end_end
+    100026: joint17
+    100028: joint18
+    100030: joint19
+    100032: joint2
+    100034: joint20
+    100036: joint21
+    100038: joint22
+    100040: joint23
+    100042: joint23_end
+    100044: joint23_end_end
+    100046: joint24
+    100048: joint25
+    100050: joint26
+    100052: joint27
+    100054: joint27_end
+    100056: joint27_end_end
+    100058: joint3
+    100060: joint4
+    100062: joint5
+    100064: joint6
+    100066: joint7
+    100068: joint8
+    100070: joint8_end
+    100072: joint8_end_end
+    100074: polySurface21
+    100076: polySurface22
+    100078: polySurface23
+    100080: polySurface24
+    100082: polySurface25
+    100084: polySurface26
+    100086: polySurface27
+    100088: polySurface28
+    100090: transform1
+    100092: transform2
+    100094: transform3
+    100096: transform4
+    100098: transform5
+    100100: //RootNode
+    400000: Armature
+    400002: joint1
+    400004: joint10
+    400006: joint11
+    400008: joint12
+    400010: joint12_end
+    400012: joint12_end_end
+    400014: joint13
+    400016: joint14
+    400018: joint15
+    400020: joint16
+    400022: joint16_end
+    400024: joint16_end_end
+    400026: joint17
+    400028: joint18
+    400030: joint19
+    400032: joint2
+    400034: joint20
+    400036: joint21
+    400038: joint22
+    400040: joint23
+    400042: joint23_end
+    400044: joint23_end_end
+    400046: joint24
+    400048: joint25
+    400050: joint26
+    400052: joint27
+    400054: joint27_end
+    400056: joint27_end_end
+    400058: joint3
+    400060: joint4
+    400062: joint5
+    400064: joint6
+    400066: joint7
+    400068: joint8
+    400070: joint8_end
+    400072: joint8_end_end
+    400074: polySurface21
+    400076: polySurface22
+    400078: polySurface23
+    400080: polySurface24
+    400082: polySurface25
+    400084: polySurface26
+    400086: polySurface27
+    400088: polySurface28
+    400090: transform1
+    400092: transform2
+    400094: transform3
+    400096: transform4
+    400098: transform5
+    400100: //RootNode
+    2100000: lambert5
+    2100002: "\u706F\u7B3C\u9C7C"
+    2300000: transform1
+    2300002: transform2
+    2300004: transform3
+    2300006: transform4
+    2300008: transform5
+    3300000: transform1
+    3300002: transform2
+    3300004: transform3
+    3300006: transform4
+    3300008: transform5
+    4300000: transform4
+    4300002: transform3
+    4300004: transform2
+    4300006: transform1
+    4300008: transform5
+    4300010: polySurface26
+    4300012: polySurface27
+    4300014: polySurface28
+    7400000: "\u6E38\u52A8"
+    7400002: "\u6B7B\u4EA1"
+    7400004: "\u6E38\u52A8+\u6B7B\u4EA1"
+    9500000: //RootNode
+    13700000: polySurface26
+    13700002: polySurface27
+    13700004: polySurface28
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "\u6E38\u52A8"
+      takeName: Armature|Armature|Armature|Armature|Take 001|Layer0|Armature|Armature|Ta
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u6B7B\u4EA1"
+      takeName: Armature|Armature|Armature|Armature|Take 001|Layer0|Armature|Armature|Ta
+      firstFrame: 80
+      lastFrame: 131
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u6E38\u52A8+\u6B7B\u4EA1"
+      takeName: Armature|Armature|Armature|Armature|Take 001|Layer0|Armature|Armature|Ta
+      firstFrame: 160
+      lastFrame: 251
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
