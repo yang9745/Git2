@@ -19,10 +19,10 @@ namespace TouchScript.InputSources
     /// Processes TUIO 1.1 input.
     /// </summary>
     [AddComponentMenu("TouchScript/Input Sources/TUIO Input")]
-    [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_InputSources_TuioInput.html")]
+    [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_InputSources_TuioInput.htm")]
     public sealed class TuioInput : InputSource
     {
-        #region Constants ³£Á¿
+        #region Constants
 
         /// <summary>
         /// Type of TUIO input object.

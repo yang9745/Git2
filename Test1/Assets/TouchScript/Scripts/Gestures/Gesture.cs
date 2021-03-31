@@ -20,7 +20,7 @@ namespace TouchScript.Gestures
     /// </summary>
     public abstract class Gesture : DebuggableMonoBehaviour
     {
-        #region Constants  ³£Á¿
+        #region Constants
 
         /// <summary>
         /// Unity event for gesture state changes.

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Yu/Scenes/SampleScene.unity
+- path: Assets/TouchScript/Examples/Camera/Camera.unity
   isLoaded: 1
   isActive: 1

@@ -13,7 +13,7 @@ namespace TouchScript.Behaviors.Cursors.UI
     public class TextureSwitch : MonoBehaviour
     {
 
-        public CanvasRenderer r;
+        private CanvasRenderer r;
 
         /// <summary>
         /// Shows this instance.

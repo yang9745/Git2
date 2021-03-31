@@ -178,17 +178,10 @@
     <Compile Include="Assets\TouchScript\Scripts\Utils\PointerUtils.cs" />
     <Compile Include="Assets\TouchScript\Scripts\Utils\TimedSequence.cs" />
     <Compile Include="Assets\TouchScript\Scripts\Utils\TransformUtils.cs" />
-    <Compile Include="Assets\Yu\Material\Water1\Water.cs" />
-    <Compile Include="Assets\Yu\Material\Water2\AddRipper.cs" />
-    <Compile Include="Assets\Yu\Material\Water2\MyStack.cs" />
-    <Compile Include="Assets\Yu\Material\Water2\PostEffectBase.cs" />
-    <Compile Include="Assets\Yu\Material\Water2\RipperPostEffect.cs" />
     <Compile Include="Assets\Yu\Scripts\CameraController.cs" />
     <Compile Include="Assets\Yu\Scripts\FishBase.cs" />
     <Compile Include="Assets\Yu\Scripts\GetPoint.cs" />
-    <None Include="Assets\Yu\Material\Water1\Water.shader" />
     <None Include="Assets\TouchScript\Shaders\DebugDepthTest.shader" />
-    <None Include="Assets\Yu\Material\Water2\RipperShader.shader" />
     <None Include="Assets\TouchScript\license.txt" />
     <None Include="Assets\TouchScript\Shaders\Cursor.shader" />
     <None Include="Assets\TouchScript\Shaders\DebugMultiplyDepthTest.shader" />
@@ -197,25 +190,25 @@
     <None Include="Assets\TouchScript\Examples\_misc\Shaders\UnlitColor.shader" />
     <None Include="Assets\TouchScript\Examples\_misc\Shaders\BorderDiffuse.shader" />
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/GitFild/Git2/Test1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.32f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -422,19 +415,19 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.32f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="OSCsharp">
-      <HintPath>E:/GitFild/Git2/Test1/Assets/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Assets/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
     </Reference>
     <Reference Include="TUIOsharp">
-      <HintPath>E:/GitFild/Git2/Test1/Assets/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Assets/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/GitFild/Git2/Test1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/GitFild/Git2/Test1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/GitFild/Git2/Test1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/GitFild/Git21/Test1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.32f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

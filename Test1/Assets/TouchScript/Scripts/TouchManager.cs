@@ -1,4 +1,4 @@
-﻿/*
+/*
  * @author Valentin Simonov / http://va.lent.in/
  */
 
@@ -17,41 +17,36 @@ namespace TouchScript
 {
     /// <summary>
     /// A facade object to configure and hold parameters for an instance of <see cref="ITouchManager"/>. Contains constants used throughout the library.
-    /// 一个facade对象，用于配置和保存   ITouchManager     实例的参数。包含在整个库中使用的常量
     /// <seealso cref="ITouchManager"/>
     /// </summary>
     /// <remarks>
     /// <para>An instance of <see cref="TouchManager"/> may be added to a Unity scene to hold (i.e. serialize them to the scene) parameters needed to configure an instance of <see cref="ITouchManager"/> used in application. Which can be accessed via <see cref="TouchManager.Instance"/> static property.</para>
     /// <para>Though it's not required it is a convenient way to configure <b>TouchScript</b> for your scene. You can use different configuration options for different scenes.</para>
-    
-    /// 一个“TouchManager”的实例可以添加到Unity场景中，以保存(即序列化到场景中)配置应用程序中使用的“ITouchManager”实例所需的参数。
-    /// 可以通过“TouchManager”访问。“静态属性实例。虽然这不是必需的，但它是为你的场景配置TouchScript的一个方便的方法。您可以为不同的场景使用不同的配置选项。
-    
     /// </remarks>
     [AddComponentMenu("TouchScript/Touch Manager")]
     [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_TouchManager.htm")]
     public sealed class TouchManager : DebuggableMonoBehaviour
     {
-        #region Constants  常量
+        #region Constants
 
 #if TOUCHSCRIPT_DEBUG
         public const int DEBUG_GL_START = int.MinValue;
         public const int DEBUG_GL_TOUCH = DEBUG_GL_START;
 #endif
-        // 在Unity事件系统中实现指针事件。
+
         /// <summary>
         /// Event implementation in Unity EventSystem for pointer events.
         /// </summary>
         [Serializable]
         public class PointerEvent : UnityEvent<IList<Pointer>> {}
-        // 在Unity事件系统中实现帧事件
+
         /// <summary>
         /// Event implementation in Unity EventSystem for frame events.
         /// </summary>
         /// <seealso cref="UnityEngine.Events.UnityEvent" />
         [Serializable]
         public class FrameEvent : UnityEvent {}
-        //位掩码的值表示Unity消息的实例<see cref="TouchManager"/>将分派。
+
         /// <summary>
         /// Values of a bit-mask representing which Unity messages an instance of <see cref="TouchManager"/> will dispatch.
         /// </summary>
@@ -59,165 +54,164 @@ namespace TouchScript
         public enum MessageType
         {
             /// <summary>
-            /// 指针帧启动。                                     Pointer frame started.•
+            /// Pointer frame started.
             /// </summary>
             FrameStarted = 1 << 0,
 
             /// <summary>
-            /// 指针帧结束。                                     Pointer frame finished.
+            /// Pointer frame finished.
             /// </summary>
             FrameFinished = 1 << 1,
 
             /// <summary>
-            /// 在帧期间添加了一些指针。                 Some pointers were added during the frame.
+            /// Some pointers were added during the frame.
             /// </summary>
             PointersAdded = 1 << 2,
 
             /// <summary>
-            /// 一些指针在帧期间被更新。                  Some pointers were updated during the frame.
+            /// Some pointers were updated during the frame.
             /// </summary>
             PointersUpdated = 1 << 3,
 
             /// <summary>
-            /// 一些指针在击球过程中触到了球表面。 Some pointers have touched the surface during the frame.
+            /// Some pointers have touched the surface during the frame.
             /// </summary>
             PointersPressed = 1 << 4,
 
             /// <summary>
-            /// 在帧期间释放了一些指针。                 Some pointers were released during the frame.
+            /// Some pointers were released during the frame.
             /// </summary>
             PointersReleased = 1 << 5,
 
             /// <summary>
-            /// 一些指针在帧期间被删除。                 .Some pointers were removed during the frame.
+            /// Some pointers were removed during the frame.
             /// </summary>
             PointersRemoved = 1 << 6,
 
             /// <summary>
-            /// 一些指针在帧期间被取消。                 Some pointers were cancelled during the frame.
+            /// Some pointers were cancelled during the frame.
             /// </summary>
             PointersCancelled = 1 << 7
         }
 
         /// <summary>
-        ///  分派Unity消息的名称。                          Names of dispatched Unity messages.
+        /// Names of dispatched Unity messages.
         /// </summary>
         public enum MessageName
         {
             /// <summary>
-            /// 指针帧启动。                                      Pointer frame started.
+            /// Pointer frame started.
             /// </summary>
             OnFrameStart = MessageType.FrameStarted,
 
             /// <summary>
-            /// 指针帧结束。                                     Pointer frame finished.
+            /// Pointer frame finished.
             /// </summary>
             OnFrameFinish = MessageType.FrameFinished,
 
             /// <summary>
-            /// 在帧期间添加了一些指针。                 Some pointers were added during the frame.
+            /// Some pointers were added during the frame.
             /// </summary>
             OnPointersAdd = MessageType.PointersAdded,
 
             /// <summary>
-            /// 一些指针在帧期间被更新。                  Some pointers have updated during the frame.
+            /// Some pointers have updated during the frame.
             /// </summary>
             OnPointersUpdate = MessageType.PointersUpdated,
 
             /// <summary>
-            /// 一些指针在击球过程中触到了球表面。 Some pointers have touched the surface during the frame.
+            /// Some pointers have touched the surface during the frame.
             /// </summary>
             OnPointersPress = MessageType.PointersPressed,
 
             /// <summary>
-            /// 在帧期间释放了一些指针。                 Some pointers were released during the frame.
+            /// Some pointers were released during the frame.
             /// </summary>
             OnPointersRelease = MessageType.PointersReleased,
 
             /// <summary>
-            /// 一些指针在帧期间被删除。                 Some pointers were removed during the frame.
+            /// Some pointers were removed during the frame.
             /// </summary>
             OnPointersRemove = MessageType.PointersRemoved,
 
             /// <summary>
-            /// 一些指针在帧期间被取消。                 Some pointers were cancelled during the frame.
+            /// Some pointers were cancelled during the frame.
             /// </summary>
             OnPointersCancel = MessageType.PointersCancelled
         }
 
         /// <summary>
-        /// 在DPI计算中使用厘米与英寸的比率。       Centimeter to inch ratio to be used in DPI calculations.
+        /// Centimeter to inch ratio to be used in DPI calculations.
         /// </summary>
         public const float CM_TO_INCH = 0.393700787f;
 
         /// <summary>
-        /// u在DPI计算中使用英寸与厘米的比率。     Inch to centimeter ratio to be used in DPI calculations.
+        /// Inch to centimeter ratio to be used in DPI calculations.
         /// </summary>
         public const float INCH_TO_CM = 1 / CM_TO_INCH;
 
         /// <summary>
-        /// 用于表示屏幕位置的未知状态的值。使用<看到cref = " TouchManager。/>来检查一个点是否有未知值。1
         /// The value used to represent an unknown state of a screen position. Use <see cref="TouchManager.IsInvalidPosition"/> to check if a point has unknown value.
         /// </summary>
         public static readonly Vector2 INVALID_POSITION = new Vector2(float.NaN, float.NaN);
 
         /// <summary>
-        /// TouchScript版本              TouchScript version.
+        /// TouchScript version.
         /// </summary>
         public static readonly Version VERSION = new Version(9, 0);
 
         /// <summary>
-        /// TouchScript版本后缀      TouchScript version suffix.
+        /// TouchScript version suffix.
         /// </summary>
         public static readonly string VERSION_SUFFIX = "";
 
         #endregion
 
-        #region Events  事件，在unity中实现
+        #region Events
 
         /// <summary>
-        /// 当一个新帧在所有其他事件之前启动时发生。    Occurs when a new frame is started before all other events.
+        /// Occurs when a new frame is started before all other events.
         /// </summary>
         public FrameEvent OnFrameStart = new FrameEvent();
 
         /// <summary>
-        ///当帧完成时发生。在所有其他事件之后。            Occurs when a frame is finished. After all other events.
+        /// Occurs when a frame is finished. After all other events.
         /// </summary>
         [SerializeField]
         public FrameEvent OnFrameFinish = new FrameEvent();
 
         /// <summary>
-        /// 当添加新的悬停指针时发生                               Occurs when new hovering pointers are added.
+        /// Occurs when new hovering pointers are added.
         /// </summary>
         [SerializeField]
         public PointerEvent OnPointersAdd = new PointerEvent();
 
         /// <summary>
-        /// 在更新指针时发生。                                        Occurs when pointers are updated.
+        /// Occurs when pointers are updated.
         /// </summary>
         [SerializeField]
         public PointerEvent OnPointersUpdate = new PointerEvent();
 
         /// <summary>
-        /// 当指针触碰表面时发生。                                 Occurs when pointers touch the surface.
+        /// Occurs when pointers touch the surface.
         /// </summary>
         [SerializeField]
         public PointerEvent OnPointersPress = new PointerEvent();
 
         /// <summary>
-        /// 在释放指针时发生。                                       Occurs when pointers are released.
+        /// Occurs when pointers are released.
         /// </summary>
         [SerializeField]
         public PointerEvent OnPointersRelease = new PointerEvent();
 
         /// <summary>
-        /// 当指针从系统中删除时发生。                        Occurs when pointers are removed from the system.
+        /// Occurs when pointers are removed from the system.
         /// </summary>
         [SerializeField]
         public PointerEvent OnPointersRemove = new PointerEvent();
 
         /// <summary>
-        /// 当指针被取消时发生。                                  Occurs when pointers are cancelled.
+        /// Occurs when pointers are cancelled.
         /// </summary>
         [SerializeField]
         public PointerEvent OnPointersCancel = new PointerEvent();
