@@ -14,7 +14,7 @@ namespace TouchScript.Clusters
     /// </summary>
     public sealed class Clusters2D
     {
-        #region Constants
+        #region Constants  ³£Á¿
 
         /// <summary>
         /// The first cluster.

@@ -22,7 +22,7 @@ public class FishBase : MonoBehaviour
     float RotateSpeed=3;
     [Header("移动位置")]
     protected Quaternion TargetRota;
-    public GetPoint Points;
+  
     [Range(4,9)]
     [Header("延迟时间")]
     public float delayTime = 7;

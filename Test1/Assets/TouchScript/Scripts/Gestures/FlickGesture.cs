@@ -18,7 +18,7 @@ namespace TouchScript.Gestures
     [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_Gestures_FlickGesture.htm")]
     public class FlickGesture : Gesture
     {
-        #region Constants
+        #region Constants  ³£Á¿
 
         /// <summary>
         /// Message name when gesture is recognized
