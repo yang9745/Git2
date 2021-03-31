@@ -18,7 +18,7 @@ namespace TouchScript.Gestures
     [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_Gestures_MetaGesture.htm")]
     public sealed class MetaGesture : Gesture
     {
-        #region Constants
+        #region Constants  ³£Á¿
 
         /// <summary>
         /// Message dispatched when a pointer begins.

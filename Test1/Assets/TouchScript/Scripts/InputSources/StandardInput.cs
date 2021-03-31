@@ -20,7 +20,7 @@ namespace TouchScript.InputSources
     [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_InputSources_StandardInput.htm")]
     public sealed class StandardInput : InputSource
     {
-        #region Constants
+        #region Constants  ³£Á¿
 
         /// <summary>
         /// Pointer API to use on Windows 8 and later OS versions.

@@ -20,7 +20,7 @@ namespace TouchScript.Gestures
     [HelpURL("http://touchscript.github.io/docs/html/T_TouchScript_Gestures_LongPressGesture.htm")]
     public class LongPressGesture : Gesture
     {
-        #region Constants
+        #region Constants  ³£Á¿
 
         /// <summary>
         /// Message name when gesture is recognized

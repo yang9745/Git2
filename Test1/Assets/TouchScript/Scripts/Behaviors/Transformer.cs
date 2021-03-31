@@ -384,6 +384,7 @@ namespace TouchScript.Behaviors
         {
             //base.Start
             TouchManager.Instance.PointersPressed += pointersPressedHandler;
+            TouchManager.Instance.PointersAdded += pointersAHandler;
         }
         private void pointersPressedHandler(object sender, PointerEventArgs e)
         {
@@ -391,6 +392,14 @@ namespace TouchScript.Behaviors
             {
                 
                 Camera.main.GetComponent<CameraController>().GetRay(pointer.Position);
+            }
+        }
+        private void pointersAHandler(object sender, PointerEventArgs e)
+        {
+            foreach (var pointer in e.Pointers)
+            {
+
+                 Camera.main.GetComponent<CameraController>().GetRay(pointer.Position);
             }
         }
         #endregion
